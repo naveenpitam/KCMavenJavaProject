@@ -48,12 +48,19 @@
       <scope>test</scope>
     </dependency>
 	  
+<!-- https://mvnrepository.com/artifact/org.wildfly.core/wildfly-network -->
+<dependency>
+    <groupId>org.wildfly.core</groupId>
+    <artifactId>wildfly-network</artifactId>
+    <version>1.0.0.Alpha1</version>
+</dependency>
+
 	  <dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20160212</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -96,13 +103,13 @@
   <distributionManagement>
         <repository>
           <id>nexus</id>
-          <name>KC Tech Releases Nexus Repository</name>
-          <url>http://localhost:8081/repository/batch14-release/</url>
+          <name>naveen-release</name>
+          <url>http://13.233.106.136:8081/repository/release/</url>
         </repository>
         <snapshotRepository>
           <id>nexus</id>
-          <name>KC Tech Snapshot Nexus Repository </name>
-          <url>http://localhost:8081/repository/batch14-snapshot/</url>
+          <name>naveen-snapshot</name>
+          <url>http://13.233.106.136:8081/repository/snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -113,7 +120,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <sonar.host.url>http://localhost:9000/</sonar.host.url>
+                <sonar.host.url>http://13.233.106.136:9000/</sonar.host.url>
 				<sonar-maven-plugin.version>3.3.0.603</sonar-maven-plugin.version>
             </properties>
             <build>
