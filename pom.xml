@@ -103,12 +103,12 @@
   <distributionManagement>
         <repository>
           <id>nexus</id>
-          <name>naveen-release</name>
+          <name>release</name>
           <url>http://13.233.106.136:8081/repository/release/</url>
         </repository>
         <snapshotRepository>
           <id>nexus</id>
-          <name>naveen-snapshot</name>
+          <name>snapshot</name>
           <url>http://13.233.106.136:8081/repository/snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
